@@ -1,0 +1,72 @@
+/*---------header---------*/
+.header {
+    .logo {
+        grid-column:  1 / 2;
+        grid-row: 1 / 5;
+        display: block;
+        width: 25rem;
+        height: 10rem;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .logCart {
+        grid-column: 5 / 9;
+        grid-row: 1 / 2;
+        text-align: end;
+        a {
+            text-decoration: none;
+            color: $textPrimario;
+            display: inline-block;
+            padding: .5rem 0;
+            img {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
+    }
+    .nav {
+        grid-column: 1 / 9;
+        grid-row: 4 / 5;
+        justify-content: end;
+    }
+    .contNavRes {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        display: none;
+    }
+}
+/*----------------nav----------------*/
+.nav {
+    ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+        margin-right: 9rem;
+
+        li {
+            a {
+                text-decoration: none;
+                color: $textPrimario;
+                font-size: 2.4rem;
+            }
+            &:hover {
+                background-color: #31313112;
+            }
+        }
+    }
+}
+/*---------------------buscador-----------------*/
+.buscador {
+    background-color: inherit;
+    .buscNav {
+        background-color: inherit;
+        .contBuscador {
+            justify-content: end;
+        }
+    }
+ }

@@ -1,0 +1,23 @@
+.contH1 {
+    padding: 5rem;
+    text-align: center;
+    div {
+        background-color: $backBlackOp;
+        h1 {
+            font-size: 4rem;
+            padding: 4rem 3rem;
+            border-bottom: $bordeDeco;
+        }
+        p {
+            font-size: 2rem;
+            padding: 3rem 6rem;
+            @media (max-width: 576px) {
+                padding: 2rem .5rem;
+            }
+        }
+        box-shadow: $box-shadow;
+    }
+    @media (max-width: 767px) {
+        padding: 3rem .5rem;
+    }
+}

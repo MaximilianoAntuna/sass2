@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../styles/estilos.css">
+
+    <title>Document</title>
+</head>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">enviar PACK FAMILIAR al carrito?  </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                El paquete incluye:
+
+                Coordinación permanente.
+                » 11 noches de alojamiento en Orlando en Hotel Hilton Garden Inn at Sea World o similar.
+                » 2 noches de alojamiento en Miami en Hotel Sheraton Four Points Miami Beach o similar.
+                » Entradas 2 días Universal Studios + Island of Adventure.
+                » Entrada a Sea World.
+                » Entrada 4 días Walt Disney Word : EPCOT, ANIMAL KINGDOM, MAGIC KINGDOM, DISNEY HOLLYWOD STUDIOS.
+                » Entrada a Parque de agua- 2 en Julio.
+                » Entrada a Busch Gardens.
+                » Visitas Market Place Downtown y City Walk, Premium Outlets, Florida Mall y Best Buy en Orlando.
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Enviar al carrito</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<body>
+    <div class="container-fluid contenedor">
+        <header class="row cajaGrilla header">
+            <div class="col-2 contNavRes">
+                <nav class="navbar navbar-light  fixed-top navResponsive">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler buttonLeft" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end respBCG" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item resLi">
+                                        <a class="nav-link" href="../vuelos.html">Vuelos</a>
+                                    </li>
+                                    <li class="nav-item resLi">
+                                        <a class="nav-link" href="../paquetes.html">Paquetes</a>
+                                    </li>
+                                    <li class="nav-item resLi">
+                                        <a class="nav-link" href="../disney.html">Disney</a>
+                                    </li>
+                                    <li class="nav-item resLi">
+                                        <a class="nav-link" href="../../index.html#nosotros">Nosotros</a>
+                                    </li>
+                                    <li class="nav-item resLi">
+                                        <a class="nav-link" href="../contacto.html">Contacto</a>
+                                    </li>
+                                </ul>
+                                <form class="d-flex">
+                                    <input class="form-control inputBuscador me-2" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success botonBuscador" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <a href="../../index.html" class="logo">
+                <img src="../../assets/TRAVELER.png" alt="">
+            </a>
+            <div class="logCart">
+                <a href="../acceder.html">Acceder</a>
+                <a href="">
+                    <img src="../../assets/carrito.png" alt="carrito">
+                </a>
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="../vuelos.html">Vuelos</a>
+                    </li>
+                    <li>
+                        <a href="../paquetes.html  ">Paquetes</a>
+                    </li>
+                    <li>
+                        <a href="../disney.html">Disney</a>
+                    </li>
+                    <li>
+                        <a href="../../index.html#nosotros">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="../contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="row buscador">
+            <nav class="navbar navbar-light p-0 buscNav">
+                <div class="container-fluid contBuscador">
+                    <form class="d-flex">
+                        <input class="form-control me-2 inputBuscador" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success botonBuscador" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+
+        <div class="row form__style formVuelos">
+            <p><b>Encontra los mejores ofertas de Disney con reserva</b></p>
+            <form action="">
+                <div class="row disneyRadio">
+                    <div class="col">
+                        <div class="form-check form-check-inline col-sm-5 ">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Hotel, ticket y comida</label>
+                        </div>
+                        <div class="form-check form-check-inline col-sm-3 ">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Solo tickets</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 mb-4 col-md-8">
+                        <div class="input-group">
+                            <span class="input-group-text">Ida / Vuelta</span>
+                            <input type="date" aria-label="fecha salida" class="form-control inputZ">
+                            <input type="date" aria-label="fecha vuelta" class="form-control inputZ">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <select class="form-select inputZ" aria-label="Default select example">
+                            <option selected>Cantidad de personas</option>
+                            <option value="1">Una persona</option>
+                            <option value="2">Dos personas</option>
+                            <option value="3">Tres o mas personas</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-12 vuelosBoton">
+                        <button type="submit" class="btn btn-primary bttForm">Buscar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <h1 class="text-center">ENCONTRA PAQUETES PARA TODA LA FAMILA</h1>
+            <section class="cajaGrilla slider sli-disney col-sm-12 p-0">
+                <div class="section__img">
+                    <img src="../../assets/d-fam-1.jpg" alt="familia-castillo-disney">
+                </div>
+                <div class="section__img">
+                    <img src="../../assets/d-fam-2.jpg" alt="personajes-disney-castillo">
+                </div>
+                <div class="section__img">
+                    <img src="../../assets/d-fam-3.jpg" alt="mickey-niño-familia">
+                </div>
+                <div class="section__img">
+                    <img src="../../assets/d-fam-4.jpg" alt="mickey-familia-castillo">
+                </div>
+                <div>
+                    <img src="../../assets/d-fam-5.jpg" alt="familia-con-mickey-mouse">
+                </div>
+                <div>
+                    <img src="../../assets/DisneyLogo.png" alt="logo-de-disney-resort">
+                </div>
+
+                <article class="art-slide art-slide-disney">
+                    <div>
+                        <h3>ORLANDO RESORT + TICKETS PARQUE</h3>
+                        <p>Estadia completa, transporte y tiket para los mejores parques tematicos</p>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Enviar al carrito
+                    </button>
+
+                </article>
+
+                <p>Descubre los parques
+                    • En Magic Kingdom podrás disfrutar de las atracciones clásicas de Disney, destellantes fuegos
+                    artificiales, espectáculos musicales y de la compañía de los personajes más queridos de Disney
+                    World.
+                    • En Epcot, descubrirás las culturas del mundo en sus increíbles pabellones internacionales, te
+                    divertirás en sus emocionantes atracciones y vivirás un día diferente junto a la mejor tecnología.
+                </p>
+            </section>
+
+        </div>
+        <div class="row textoDescr">
+            <article class="col-sm-12">
+                <h3>RESORT DE WALT DISNEY WORLD  ®</h3>
+                <p>¿Qué es lo primero que se te viene a la mente cuando piensas en Walt Disney World   ®Resort en Orlando? Si la respuesta es “parques temáticos”, no te equivocas ... Sin embargo, entre los parques acuáticos, los complejos de clase mundial y la meca de restaurantes, entretenimiento y tiendas que se encuentran en Disney Springs, los parques temáticos solo narran la mitad de la historia de Disney.</p>
+                <p>
+                    <i><b>Ten en cuenta</b>: Dependerá el momento en el que sea tu visita, pero algunas experiencias podrían estar temporalmente modificadas. Conoce más sobre un viaje saludable a Orlando y consulta con tus atracciones, restaurantes, y otros negocios preferidos para conocer su estado actual.</i>
+                </p>
+            </article>
+        </div>
+
+
+
+        <div class="row destacados">
+            <div class="destacados__titulo">
+                <h3 class="h1 row justify-content-center">Destacados</h3>
+            </div>
+            <div class="cont__tarjeta ">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card dest__tarjeta">
+                            <img src="../../assets/gran-muralla.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card dest__tarjeta">
+                            <img src="../../assets/disneyDest.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="card dest__tarjeta">
+                            <img src="../../assets/Torre-Eiffel.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer class="row footer">
+            <div class="row justify-content-between">
+                <article class="col-sm-12 col-lg-8 order-sm-1 order-lg-0 terminos">
+                    <h3>terminos</h3>
+                    <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non impedit provident,
+                        officiis architecto
+                        quos unde et animi ducimus hic esse placeat porro sint maxime quas aperiam dolor! Maiores quas
+                        quaerat laudantium deserunt cumque non, neque dicta itaque, magni aut soluta laborum amet
+                        doloribus,
+                        eius veniam?</p>
+                </article>
+                <section class="col-sm-6 col-lg-2 Fcont">
+                    <div>
+                        <h3>CONTACTO</h3>
+                        <p>Calle Falsa 123</p>
+                        <P>ROSARIO, SNTA FE</P>
+                        <P>+54 341 648-4532</P>
+                        <P>ejemplo@gmail.com</P>
+                    </div>
+                </section>
+                <section class="col-sm-6 col-lg-2 Fredes">
+                    <div>
+                        <h3> NUESTRAS REDES</h3>
+                        <a href="https://www.facebook.com/">
+                            <div>
+                                <img src="../../assets/face.png" alt="face logo">
+                                <p>Facebook</p>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/?hl=es-la">
+                            <div>
+                                <img src="../../assets/insta.png" alt="insta logo">
+                                <p>instagram</p>
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/?lang=es">
+                            <div>
+                                <img src="../../assets/tweet.png" alt="twit logo">
+                                <p>Twitter</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

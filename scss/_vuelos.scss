@@ -1,0 +1,39 @@
+/*---------------vuelos-------------*/
+.formVuelos {
+    p {
+        margin: 0;
+    }
+
+    form {
+        @include flex(flex, column, .7rem);
+        
+        .vuelosRadio {
+            flex-flow: row;
+            margin:  .5rem  0;
+        }
+        .paqRadio {
+            @extend .vuelosRadio;
+        }
+        .disneyRadio {
+            @extend .vuelosRadio;
+        }
+
+        div {
+            div{
+                div{
+                    input{
+                        @extend .inputZ;
+                    }
+                }
+                .select {
+                    @extend .inputZ;
+                }
+            }
+            .vuelosBoton {
+                display: flex;
+                justify-content: end;
+            }
+        }
+    }
+
+}

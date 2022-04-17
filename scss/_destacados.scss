@@ -1,0 +1,18 @@
+.cont__tarjeta {
+    padding: 0 3%;
+
+    div{
+        div{
+            .dest__tarjeta {
+                width: 90%;
+                margin: 0  auto 2rem;
+                
+                img {
+                    object-fit: cover;
+                    height: 17rem;
+                }
+
+            }
+        }
+    }
+}

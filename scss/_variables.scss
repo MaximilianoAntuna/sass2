@@ -1,0 +1,68 @@
+html {
+    font-size: 63.5%;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 1.6rem;   
+    
+}
+
+.contenedor {
+    background-color: #CFCCCC;
+}
+.cajaGrilla {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+.main {
+    justify-content: center;
+}
+.inputZ {
+    font-size: 1.9rem;
+    padding: 0 .5rem;
+}
+
+$box-shadow: -2px 3px 15px 5px rgba(0,0,0,0.4);
+$slider-shadow: -2px 3px 15px 5px rgba(0,0,0,0.08);
+$textPrimario: #313131;
+$bordeDeco:rgba(0, 0, 0, 0.135) solid .3rem;
+$backBlackOp: rgba(0, 0, 0, 0.135);
+
+//   mapa     //despues de hacelo y usarlo me di cuenta que lo hice especificamente para los form pero los puedo usar en cualquier lado
+$form: (
+    pad: 1.5rem,
+    marg: 1.5rem auto,
+    b-rad:1.1rem,
+    fSize:1.9rem,
+    sombraCaja: -2px 3px 15px 5px rgba(0,0,0,0.4),
+    colorFondo:  #6161614c
+
+
+);
+.form__style {
+    margin: map-get($form, marg);
+    padding: map-get($map: $form, $key: pad);
+    background-color: map-get($map: $form, $key:colorFondo);
+    border-radius: map-get($map: $form, $key: b-rad);
+    width: 95%;
+
+}
+
+
+//
+
+@mixin flex($flex, $direc, $wrap){
+    display: $flex;
+    flex-direction: $direc;
+    flex-flow: $wrap;
+};
+@mixin img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+};

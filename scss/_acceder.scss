@@ -1,0 +1,55 @@
+/*-----------------acceder-----------*/
+
+.main {
+    .h1chico {
+        justify-content: center;
+        
+        .contH1{
+            padding: 0;
+            margin-top: 1.4rem;
+            width: auto;
+            
+            div{
+                border-radius: 1.1rem;
+                h1{
+                    font-size: 3rem;
+                    padding: 2rem;
+                }
+                p {
+                    padding: 1.5rem;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    .acceso{
+        margin: 2rem;
+        .acceso__formularios{
+            justify-content: space-around;
+            .acceso__registro{
+                @extend .form__style;
+                box-shadow: $box-shadow;
+                section{
+                    form{
+                        input{
+                            @extend .inputZ;
+                        }
+                        select {
+                            @extend .inputZ;
+                        }
+                    }
+                }
+            }
+            .acceso-log {
+                @extend .acceso__registro;
+                form {
+                    div {
+                        input {
+                            @extend .inputZ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

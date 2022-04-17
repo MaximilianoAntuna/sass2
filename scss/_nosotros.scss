@@ -1,0 +1,28 @@
+.nosotros {
+    margin: 4rem 0;
+    border-top: $bordeDeco;
+    border-bottom: $bordeDeco;
+    padding: 2rem 0;
+    div{
+        .nosotros__texto {
+            h3 {
+                font-size: 5rem;
+                padding: 1rem;
+                color: $textPrimario;
+            }
+            p {
+                font-size: 2.2rem;
+                padding: 1rem;
+                color: $textPrimario;
+            }
+        }
+        .nosotros__img {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: left;
+            }
+        }
+    }
+}
