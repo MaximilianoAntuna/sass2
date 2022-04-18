@@ -13,7 +13,7 @@
                 border-radius: 1.1rem;
                 h1{
                     font-size: 3rem;
-                    padding: 2rem;
+                    padding: 1rem 2rem;
                 }
                 p {
                     padding: 1.5rem;
@@ -22,16 +22,18 @@
             }
         }
     }
-    .acceso{
-        margin: 2rem;
+    .acceso {
         .acceso__formularios{
             justify-content: space-around;
-            .acceso__registro{
-                @extend .form__style;
+            margin: 3rem 0;
+            .acceso__registro {
+                background-color: map-get($form, colorFondo);
+                padding: map-get($form, pad);
+                border-radius: map-get($form, b-rad);
                 box-shadow: $box-shadow;
                 section{
                     form{
-                        input{
+                        input[type=text],[type=email],[type=password]{
                             @extend .inputZ;
                         }
                         select {
@@ -42,9 +44,9 @@
             }
             .acceso-log {
                 @extend .acceso__registro;
-                form {
-                    div {
-                        input {
+                form{
+                    div{
+                        input{
                             @extend .inputZ;
                         }
                     }

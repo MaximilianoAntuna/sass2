@@ -18,12 +18,16 @@
         text-align: end;
         a {
             text-decoration: none;
+            font-weight: bold;
+            
             color: $textPrimario;
             display: inline-block;
             padding: .5rem 0;
-            img {
-                width: 2.5rem;
+            .fa-cart-flatbed-suitcase{
+                color: #931616;
+                width: 3rem;
                 height: 2.5rem;
+                margin: .5rem .5rem 0 0;
             }
         }
     }
@@ -49,13 +53,15 @@
         margin-right: 9rem;
 
         li {
+            border-radius: map-get($form, b-rad);
             a {
                 text-decoration: none;
                 color: $textPrimario;
                 font-size: 2.4rem;
+                padding: 0.5rem;
             }
             &:hover {
-                background-color: #31313112;
+                background-color: #31313134;
             }
         }
     }

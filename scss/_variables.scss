@@ -12,6 +12,7 @@ body {
 
 .contenedor {
     background-color: #CFCCCC;
+    justify-content: center;
 }
 .cajaGrilla {
     display: grid;
@@ -20,6 +21,8 @@ body {
 }
 .main {
     justify-content: center;
+    
+    padding: 0;
 }
 .inputZ {
     font-size: 1.9rem;
@@ -58,7 +61,7 @@ $form: (
 @mixin flex($flex, $direc, $wrap){
     display: $flex;
     flex-direction: $direc;
-    flex-flow: $wrap;
+    flex-wrap: $wrap;
 };
 @mixin img {
     width: 100%;
