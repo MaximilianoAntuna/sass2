@@ -9,7 +9,17 @@ body {
     font-size: 1.6rem;   
     
 }
+.boton{
+    background: linear-gradient(0deg, rgba(149,192,246,1) 0%, rgba(62,122,199,1) 100%);
+    font-size: 1.5rem;
+    color: #fff;
+    border: none;
+    transition: all .5s;
+    &:hover{
+        background: linear-gradient(180deg, rgba(149,192,246,1) 0%, rgba(62,122,199,1) 100%);
 
+    }
+}
 .contenedor {
     background-color: #CFCCCC;
     justify-content: center;

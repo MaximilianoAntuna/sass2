@@ -28,6 +28,9 @@
                 .select {
                     @extend .inputZ;
                 }
+                button {
+                    @extend .boton;
+                }
             }
             .vuelosBoton {
                 display: flex;

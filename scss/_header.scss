@@ -40,6 +40,25 @@
         grid-column: 1 / 2;
         grid-row: 1 / 3;
         display: none;
+        background-color: inherit;
+        .respBCG{
+            background-color: #CFCCCC;
+            div {
+                ul {
+                    li{
+                        border-bottom: $bordeDeco;
+                        &:last-child{
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                }
+                form {
+                    button{
+                        @extend .boton;
+                    }
+                }
+            }
+        }
     }
 }
 /*----------------nav----------------*/
@@ -51,13 +70,17 @@
         list-style: none;
         gap: 1rem;
         margin-right: 9rem;
+        align-items: center;
 
         li {
-            border-radius: map-get($form, b-rad);
+            border-radius: .6rem;
+            display: inline-block;
+            box-sizing: border-box;
             a {
                 text-decoration: none;
                 color: $textPrimario;
                 font-size: 2.4rem;
+                
                 padding: 0.5rem;
             }
             &:hover {
@@ -73,6 +96,14 @@
         background-color: inherit;
         .contBuscador {
             justify-content: end;
+            form {
+                input{
+                    @extend .inputZ;
+                }
+                button {
+                    @extend .boton;
+                }
+            }
         }
     }
  }

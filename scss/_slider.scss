@@ -54,7 +54,12 @@
         z-index: 10;
         background-color: #caeae5;
         box-shadow: $box-shadow;
-        padding: 5px 10px 15px 10px;
+        padding: 2rem 1.5rem ;
+        border-radius: .5rem;
+        h3 {
+            border-bottom:$bordeDeco;
+            padding-bottom: .5rem;
+        }
 
         p {
             font-size: 1em;

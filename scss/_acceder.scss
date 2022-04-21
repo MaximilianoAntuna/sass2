@@ -39,6 +39,9 @@
                         select {
                             @extend .inputZ;
                         }
+                        input[type=submit],[type=reset] {
+                            @extend .boton;
+                        }
                     }
                 }
             }
@@ -49,6 +52,9 @@
                         input{
                             @extend .inputZ;
                         }
+                    }
+                    button{
+                        @extend .boton;
                     }
                 }
             }

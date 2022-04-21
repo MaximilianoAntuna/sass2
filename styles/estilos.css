@@ -8,6 +8,15 @@ html {
 body {
   font-size: 1.6rem; }
 
+.boton, .header .contNavRes .respBCG div form button, .buscador .buscNav .contBuscador form button, .formVuelos form div div button, .main .acceso .acceso__formularios .acceso__registro section form input[type=submit], .main .acceso .acceso__formularios .acceso-log section form input[type=submit], .main .acceso .acceso__formularios .acceso__registro section form [type=reset], .main .acceso .acceso__formularios .acceso-log section form [type=reset], .main .acceso .acceso__formularios .acceso-log form button, .sli-disney .art-slide-disney button, .contacto .columnaContacto form div div button, .carritoCont button {
+  background: linear-gradient(0deg, #95c0f6 0%, #3e7ac7 100%);
+  font-size: 1.5rem;
+  color: #fff;
+  border: none;
+  transition: all .5s; }
+  .boton:hover, .header .contNavRes .respBCG div form button:hover, .buscador .buscNav .contBuscador form button:hover, .formVuelos form div div button:hover, .main .acceso .acceso__formularios .acceso__registro section form input:hover[type=submit], .main .acceso .acceso__formularios .acceso-log section form input:hover[type=submit], .main .acceso .acceso__formularios .acceso__registro section form :hover[type=reset], .main .acceso .acceso__formularios .acceso-log section form :hover[type=reset], .main .acceso .acceso__formularios .acceso-log form button:hover, .sli-disney .art-slide-disney button:hover, .contacto .columnaContacto form div div button:hover, .carritoCont button:hover {
+    background: linear-gradient(180deg, #95c0f6 0%, #3e7ac7 100%); }
+
 .contenedor {
   background-color: #CFCCCC;
   justify-content: center; }
@@ -21,7 +30,7 @@ body {
   justify-content: center;
   padding: 0; }
 
-.inputZ, .formVuelos form div div div input, .formVuelos form div div .select, .main .acceso .acceso__formularios .acceso__registro section form input[type=text], .main .acceso .acceso__formularios .acceso-log section form input[type=text], .main .acceso .acceso__formularios .acceso__registro section form [type=email], .main .acceso .acceso__formularios .acceso-log section form [type=email], .main .acceso .acceso__formularios .acceso__registro section form [type=password], .main .acceso .acceso__formularios .acceso-log section form [type=password], .main .acceso .acceso__formularios .acceso__registro section form select, .main .acceso .acceso__formularios .acceso-log section form select, .main .acceso .acceso__formularios .acceso-log form div input, .contacto .columnaContacto form input[type=text], .contacto .columnaContacto form [type=email] {
+.inputZ, .buscador .buscNav .contBuscador form input, .formVuelos form div div div input, .formVuelos form div div .select, .main .acceso .acceso__formularios .acceso__registro section form input[type=text], .main .acceso .acceso__formularios .acceso-log section form input[type=text], .main .acceso .acceso__formularios .acceso__registro section form [type=email], .main .acceso .acceso__formularios .acceso-log section form [type=email], .main .acceso .acceso__formularios .acceso__registro section form [type=password], .main .acceso .acceso__formularios .acceso-log section form [type=password], .main .acceso .acceso__formularios .acceso__registro section form select, .main .acceso .acceso__formularios .acceso-log section form select, .main .acceso .acceso__formularios .acceso-log form div input, .contacto .columnaContacto form input[type=text], .contacto .columnaContacto form [type=email] {
   font-size: 1.9rem;
   padding: 0 .5rem; }
 
@@ -68,7 +77,14 @@ body {
 .header .contNavRes {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
-  display: none; }
+  display: none;
+  background-color: inherit; }
+  .header .contNavRes .respBCG {
+    background-color: #CFCCCC; }
+    .header .contNavRes .respBCG div ul li {
+      border-bottom: rgba(0, 0, 0, 0.135) solid 0.3rem; }
+      .header .contNavRes .respBCG div ul li:last-child {
+        margin-bottom: 0.5rem; }
 
 /*----------------nav----------------*/
 .nav ul {
@@ -77,9 +93,12 @@ body {
   display: flex;
   list-style: none;
   gap: 1rem;
-  margin-right: 9rem; }
+  margin-right: 9rem;
+  align-items: center; }
   .nav ul li {
-    border-radius: 1.1rem; }
+    border-radius: .6rem;
+    display: inline-block;
+    box-sizing: border-box; }
     .nav ul li a {
       text-decoration: none;
       color: #313131;
@@ -135,7 +154,11 @@ body {
     z-index: 10;
     background-color: #caeae5;
     box-shadow: -2px 3px 15px 5px rgba(0, 0, 0, 0.4);
-    padding: 5px 10px 15px 10px; }
+    padding: 2rem 1.5rem;
+    border-radius: .5rem; }
+    .slider .art-slide h3 {
+      border-bottom: rgba(0, 0, 0, 0.135) solid 0.3rem;
+      padding-bottom: .5rem; }
     .slider .art-slide p {
       font-size: 1em; }
 
@@ -167,15 +190,19 @@ body {
   .cont__tarjeta div div .dest__tarjeta {
     width: 90%;
     margin: 0  auto 2rem; }
-    .cont__tarjeta div div .dest__tarjeta img {
-      object-fit: cover;
-      height: 17rem; }
+    .cont__tarjeta div div .dest__tarjeta a {
+      text-decoration: none;
+      color: #313131; }
+      .cont__tarjeta div div .dest__tarjeta a img {
+        object-fit: cover;
+        height: 17rem; }
 
 .nosotros {
   margin: 4rem 0;
   border-top: rgba(0, 0, 0, 0.135) solid 0.3rem;
   border-bottom: rgba(0, 0, 0, 0.135) solid 0.3rem;
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  overflow: hidden; }
   .nosotros div .nosotros__texto h3 {
     font-size: 5rem;
     padding: 1rem;
@@ -458,7 +485,8 @@ body {
 
 /*-----------contacto-------------*/
 .contacto {
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 1rem; }
   .contacto .columnaContacto form {
     display: flex;
     flex-direction: column;
@@ -466,6 +494,64 @@ body {
     align-content: center; }
     .contacto .columnaContacto form textarea {
       resize: none; }
-  .contacto div:nth-child(2) iframe {
-    width: 100%;
-    height: 75%; }
+  .contacto div {
+    margin-bottom: 2rem; }
+    .contacto div:nth-child(2) iframe {
+      box-shadow: -2px 3px 15px 5px rgba(0, 0, 0, 0.4);
+      width: 100%;
+      height: 75%; }
+
+/*-----------carrito--------------*/
+.carritoCont {
+  justify-content: center; }
+  .carritoCont .producto h4 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem; }
+  .carritoCont .producto div {
+    display: flex;
+    flex-flow: row;
+    background-color: rgba(255, 255, 255, 0.401);
+    box-sizing: content-box; }
+    .carritoCont .producto div div {
+      padding: 0;
+      border-bottom: rgba(0, 0, 0, 0.135) solid 0.3rem; }
+      .carritoCont .producto div div h5 {
+        font-style: italic; }
+      .carritoCont .producto div div img {
+        width: 20rem;
+        min-height: 13rem;
+        padding: .3rem;
+        object-fit: cover; }
+      .carritoCont .producto div div:last-child {
+        width: 20rem;
+        background-color: rgba(255, 255, 255, 0.087); }
+        .carritoCont .producto div div:last-child p {
+          text-align: center;
+          padding: .5rem 1rem; }
+    .carritoCont .producto div .proDescr {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap; }
+  .carritoCont .total h4 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem; }
+  .carritoCont .total div {
+    height: 10rem;
+    background-color: rgba(255, 255, 255, 0.401);
+    display: flex;
+    justify-content: space-between; }
+    .carritoCont .total div:first-child {
+      flex-grow: 1;
+      flex-flow: column;
+      padding: 1rem; }
+    .carritoCont .total div .precfinal {
+      background-color: rgba(255, 255, 255, 0.087);
+      padding: 1rem;
+      width: 10rem; }
+  .carritoCont button {
+    padding: .7rem;
+    font-size: 2rem;
+    width: 25rem;
+    margin: 1rem 0; }
