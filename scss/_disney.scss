@@ -11,7 +11,7 @@
 
         div {
             @include flex(flex, column, nowrap);
-            justify-content: center;
+            align-items: center;
 
             a {
                 display: block;
