@@ -1,4 +1,4 @@
-/*---------------vuelos-------------*/
+/*---------------vuelos/paquetes-------------*/
 .formVuelos {
     p {
         margin: 0;
@@ -30,6 +30,16 @@
                 }
                 button {
                     @extend .boton;
+                }
+                .inputCol {
+                    input {
+                        @media (max-width:375px){
+                            width: 100%;
+                        }
+                    }
+                    @media (max-width:375px){
+                        flex-direction: column;
+                    }
                 }
             }
             .vuelosBoton {

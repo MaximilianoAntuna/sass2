@@ -220,6 +220,8 @@ body {
 .footer {
   background-color: #616161b0;
   padding: 1rem .5rem; }
+  .footer h6 {
+    font-size: 1.6rem; }
   .footer div .terminos p {
     font-size: 1.3rem;
     color: #000; }
@@ -233,7 +235,8 @@ body {
     .footer div .Fredes div a div {
       display: flex; }
       .footer div .Fredes div a div p {
-        font-size: 1.3rem; }
+        font-size: 1.3rem;
+        color: #313131; }
       .footer div .Fredes div a div .fa-facebook, .footer div .Fredes div a div .fa-instagram {
         width: 2.5rem;
         height: 2.5rem;
@@ -310,7 +313,7 @@ body {
     .contH1 {
       padding: 3rem .5rem; } }
 
-/*---------------vuelos-------------*/
+/*---------------vuelos/paquetes-------------*/
 .formVuelos p {
   margin: 0; }
 
@@ -321,6 +324,12 @@ body {
   .formVuelos form .vuelosRadio, .formVuelos form .paqRadio, .formVuelos form .disneyRadio {
     flex-flow: row;
     margin: .5rem  0; }
+  @media (max-width: 375px) {
+    .formVuelos form div div .inputCol input {
+      width: 100%; } }
+  @media (max-width: 375px) {
+    .formVuelos form div div .inputCol {
+      flex-direction: column; } }
   .formVuelos form div .vuelosBoton {
     display: flex;
     justify-content: end; }
@@ -464,10 +473,10 @@ body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center; }
-    .textoDescr article h3 {
+    .textoDescr article h2 {
       text-align: center;
       font-size: 2.5rem; }
-    .textoDescr article h5 {
+    .textoDescr article h3 {
       padding-top: 1rem;
       border-top: rgba(0, 0, 0, 0.135) solid 0.3rem;
       margin-top: 1.5rem;
@@ -476,6 +485,30 @@ body {
       padding-left: 4rem; }
     .textoDescr article p {
       font-size: 1.7rem; }
+    .textoDescr article .informacion {
+      display: flex;
+      justify-content: center; }
+      .textoDescr article .informacion div {
+        width: 25rem;
+        background-color: #fff;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: -2px 3px 15px 5px rgba(0, 0, 0, 0.4);
+        border: rgba(0, 0, 0, 0.135) solid 0.3rem; }
+        .textoDescr article .informacion div h4 {
+          font-size: 2rem;
+          text-align: center; }
+        .textoDescr article .informacion div p {
+          font-size: 1.3rem; }
+        @media (max-width: 991px) {
+          .textoDescr article .informacion div:nth-child(3) {
+            width: 52rem;
+            min-height: 20rem; } }
+        @media (max-width: 590px) {
+          .textoDescr article .informacion div {
+            width: 52rem;
+            min-height: 20rem; } }
     .textoDescr article .textch {
       margin: 1rem 0;
       color: #000;
