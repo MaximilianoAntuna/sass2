@@ -313,6 +313,11 @@ body {
     .contH1 {
       padding: 3rem .5rem; } }
 
+.paqDescr p {
+  font-size: 1.1rem;
+  margin: 0 0 0 3rem;
+  padding: 0; }
+
 /*---------------vuelos/paquetes-------------*/
 .formVuelos p {
   margin: 0; }
